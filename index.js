@@ -30,7 +30,6 @@ function subtraction(){
     document.getElementById('display').innerText = ''
     capture = ''
 
-    console.log(split)
     operation = '-'
 }
 
