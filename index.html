@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <caption>
+                    <label id="display"></label>
+                </caption>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn-extended light" id="clear" type="submit" onclick="clearInput()" value="C">
+                    </td>
+                    <td>
+                        <input class="btn light" id="percentage" type="submit" onclick="percentage()" value="%">
+                    </td>
+                    <td>
+                        <input class="btn primary" id="division" type="submit" onclick="division()" value="/">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="btn dark" id="seven" type="submit" onclick="take(id)" value="7">
+                    </td>
+                    <td>
+                        <input class="btn dark" id="eight" type="submit" onclick="take(id)" value="8">
+                    </td>
+                    <td>
+                         <input class="btn dark" id="nine" type="submit" onclick="take(id)" value="9">
+                    </td>
+                    <td>
+                        <input class="btn primary" id="multiplication" type="submit" onclick="multiplication()" value="x">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="btn dark" id="four" type="submit" onclick="take(id)" value="4">
+                    </td>
+                    <td>
+                        <input class="btn dark" id="five" type="submit" onclick="take(id)" value="5">
+                    </td>
+                    <td>
+                        <input class="btn dark" id="six" type="submit" onclick="take(id)" value="6">
+                    </td>
+                    <td>
+                        <input class="btn primary" id="subtraction" type="submit" onclick="subtraction()" value="-">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="btn dark" id="one" type="submit" onclick="take(id)" value="1">
+                    </td>
+                    <td>
+                        <input class="btn dark" id="two" type="submit" onclick="take(id)" value="2">
+                    </td>
+                    <td>
+                        <input class="btn dark" id="three" type="submit" onclick="take(id)" value="3">
+                    </td>
+                    <td>
+                        <input class="btn primary" id="sum" type="submit" onclick="sum()
+                        " value="+">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn-extended dark" id="zero" type="submit" onclick="take(id)" value="0">
+                    </td>
+                    <td>
+                        <input class="btn dark" id="comma" type="submit" onclick="take(id)" value=",">
+                    </td>
+                    <td>
+                        <input class="btn primary" id="equal" type="submit" onclick="equal()" value="=">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   <script src="./index.js"></script> 
+</body>
+</html>
